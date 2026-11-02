@@ -1,0 +1,24 @@
+{
+  "name": "four-bar-linkage-calc",
+  "version": "1.0.0",
+  "description": "Classify a planar four-bar linkage from its link lengths",
+  "license": "MIT",
+  "author": "shanguoao2026-web",
+  "type": "module",
+  "bin": {
+    "four-bar-linkage-calc": "dist/cli.js"
+  },
+  "exports": "./dist/linkage.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/cli.js",
+    "test": "npm run build && node test/linkage.test.js"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.0",
+    "typescript": "^5.7.0"
+  }
+}
